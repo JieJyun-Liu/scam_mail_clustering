@@ -1,5 +1,5 @@
 # Scam Mail Clustering
-## Data
+## Data (English / with punctuations)
 1. dt: date (Reported date?)
 2. subject
 3. url: html file name
