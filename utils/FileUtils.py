@@ -58,18 +58,11 @@ def parse_raw_data_to_dict(raw_data, yearMonth, id):
 		attributes['date'] = yearMonth + firstThreeTuples[0]
 		attributes['subject'] = firstThreeTuples[1]
 		attributes['url'] = firstThreeTuples[2]
-		# attributes['comments'] = "<ul" + firstThreeTuples[3].split("ul")[1] + "ul>"
-		# attributes['comments'] = remove_html_tags(attributes['comments'])
-		# attributes['comments'] = remove_non_ascii(attributes['comments'])
-
-		# content = "<blockquote" + firstThreeTuples[3].split("blockquote")[1] + "blockquote>"
-		# content = content.strip()
+		
 		tmp = firstThreeTuples[3].split("blockquote")[2].split(",",2)
 		attributes['scam_type'] = tmp[1]
 		attributes['email_body'] = tmp[2].split("\",")[0][1:].replace('\n','')
 		attributes['email_body'] = preprocess_email_body(attributes['email_body'])
-		# attributes['email_body'] = remove_all_non_word_chars(attributes['email_body'])
-
 		attributes['email_from'] = tmp[2].split("\",")[1][1:]
 		
 		if(len(attributes['email_from'].split(",", 2)) > 1):
