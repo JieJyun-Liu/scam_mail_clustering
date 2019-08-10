@@ -13,7 +13,7 @@ from os.path import join
 
 # def train():
 def preprocess():
-	for f in os.listdir(cfg.train_dir)[:1]:
+	for f in os.listdir(cfg.train_dir):
 		load_dataset(join(cfg.train_dir,f))
 
 
