@@ -27,10 +27,10 @@
 		"url": "00810674.1.htm",
 		"email_body": "FBI Headquarters ...",
 		"scam_type": "419", 
-		"email_from": {
+		"email_from": { 
 						"name": "fbi ag***t",
 						"email": ""
-					  },
+					},
 		"email_timestamp": "31 Dec 2017 17:48:34 +0200",
 		"date": "20180101",
 		"email_replyto": {
