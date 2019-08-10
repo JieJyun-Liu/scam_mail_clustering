@@ -23,7 +23,23 @@
 ### Data cleaning: parse raw data to json (drop 4, 5 & 11)
 
 ```
-	
+	{
+		"url": "00810674.1.htm",
+		"email_body": "FBI Headquarters ...",
+		"scam_type": "419", 
+		"email_from": {
+						"name": "fbi ag***t",
+						"email": ""
+					  },
+		"email_timestamp": "31 Dec 2017 17:48:34 +0200",
+		"date": "20180101",
+		"email_replyto": {
+							"name": "",
+							"email": "atm****@rep***tative.com"
+						  },
+		"id": "20180101_1",
+		"subject": "Re: ..."
+	}
 
 ```
 
