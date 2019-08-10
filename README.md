@@ -17,4 +17,6 @@
 ## Flow
 ### Data cleaning: parse raw data to json (drop 5 & 11)
 ### 
-
+Ref. 
+[1] 419scam.org
+[2] Inside the scam jnugle: a closer look at 419 scam email operations
