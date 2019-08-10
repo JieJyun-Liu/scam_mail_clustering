@@ -1,7 +1,8 @@
+build/*
 data/*
-utils/*
 test/*
 *.tar
 *.gz
 *.pyc
+*.log
 
