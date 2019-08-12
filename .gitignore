@@ -1,8 +1,13 @@
 build/*
 data/*
 test/*
+pretrained_model/*
+venv/*
+.git/*
+
 *.tar
 *.gz
 *.pyc
-*.log
+*.log*
+.DS_Store
 
