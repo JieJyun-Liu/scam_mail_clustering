@@ -1,9 +1,9 @@
 '''
 	Date: 2019/08/12
 	Author: Eleven
-	Description: Train and test doc2vec.
-		- K=5, epoch = 40, Silhouette Score: 0.12878385, 0:39:19.228922 s
-		- K=5, epoch = 1000, Silhouette Score: 0.20264252, 6+ hours
+	Description: Train and test doc2vec (3 workers)
+				- K=5, epoch = 40, Silhouette Score: 0.12878385, 0:39:19.228922 s
+				- K=5, epoch = 1000, Silhouette Score: 0.20264252, 6+ hours
 '''
 
 import gensim
@@ -66,7 +66,6 @@ class Doc2VecModel():
 		test_dataset = [x.strip().split() for x in codecs.open(test_dataset, "r", "utf-8").readlines()]
 		self.cluster(model, test_dataset)
 
-	# [Note] It takes 6+ hours for Air do this. (1000 epochs, 5 clusters)
 	def cluster(self, model, test_dataset, k=5, start_alpha=0.01):
 		X=[]
 		for d in test_dataset:
