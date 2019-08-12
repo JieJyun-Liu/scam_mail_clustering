@@ -43,6 +43,17 @@
 
 ```
 
+### Train Doc2Vec
+
+```
+python main.py --mode train > train_doc2vec.log &
+```
+
+### Test
+```
+python main.py --mode test > test_clustering.log &
+```
+
 ### 
 Ref. 
 [1] 419scam.org
