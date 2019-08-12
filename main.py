@@ -5,13 +5,14 @@
 '''
 
 from utils.FileUtils import load_dataset
-from dataset import Dataset
 from configs import cfg
+from doc2vec import d2v
 
 import os
 from os.path import join
 
 # def train():
+
 def preprocess():
 	for f in os.listdir(cfg.train_dir):
 		load_dataset(join(cfg.train_dir,f))
@@ -22,3 +23,5 @@ if __name__ == '__main__':
 	#  Preprocess: raw data to json file.
 	if cfg.mode == 'preprocess':
 		preprocess()
+	else:
+		d2v.go()
