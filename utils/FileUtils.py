@@ -49,7 +49,14 @@ def write_data_into_json(file_name, json_data):
 		json.dump(json_data, f)
 		f.write('\n')
 	f.close()
-		
+
+def write_data_to_file(file_name, data, mode='a'):
+	outfile_name = join(cfg.output_dir, file_name) + ".txt"
+	with open(outfile_name, mode) as f:
+		f.write(data)
+		f.write('\n')
+	f.close()
+	
 # Parse raw data to EmailInfo attributes.
 def parse_raw_data_to_dict(raw_data, yearMonth, id):
 	attributes = {}

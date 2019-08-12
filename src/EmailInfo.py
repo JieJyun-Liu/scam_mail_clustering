@@ -10,4 +10,4 @@ class EmailInfo(object):
 		self.__dict__.update(dict)
 
 	def toJson(self):
-		return json.dumps(self, default=lambda o: o.__dict__)
+		return json.dumps(self, default=lambda o: o.__dict__, sort_keys=True)
